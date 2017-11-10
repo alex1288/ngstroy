@@ -1,1 +1,1 @@
-https://alex1288.github.io/nedvig_max/
+https://alex1288.github.io/ngstroy/
