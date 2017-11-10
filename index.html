@@ -44,9 +44,9 @@
 			<div class="row">
 		<div class="nav_left col-md-5 col-xs-5 col-sm-5">
 			<ul>
-				<li>Выбор квартиры</li>
-				<li>Планировка</li>
-				<li>Преимущества</li>
+				<li>Цены и <br>планировки</li>
+				<li>Расположение</li>
+				<li>Фото</li>
 			</ul>
 		</div>
 		<div class="main_logo  col-md-2 col-xs-2 col-sm-2">
@@ -56,10 +56,10 @@
 
 		<div class="nav_right   col-md-5 col-xs-5 col-sm-5">
 			<ul>
-				<li>Расположение</li>
-				<li>Ипотека</li>
-				<li>(4822)48-48-48
-<p>
+				<li>Оформление <br>квартиры</li>
+				<li>Расчитать<br> ипотеку</li>
+				<li><i class="fa fa-phone" aria-hidden="true"></i> +7 (4822)48-48-48
+<p style="margin-top: 0;">
 	<a>заказать звонок</a>
 </p>
 				</li>
@@ -72,7 +72,7 @@
 </header>
 
 <section class="main_box" >
-<div class="gray_style"  style="height: 768px;">
+<div class="gray_style"  style="height: 667px;">
 
 <div class="container ">
 	<div class="row">
@@ -85,12 +85,13 @@
 		<div class="col-lg-5 main_form gray_style">
 			
 			<form action="">
-				<h2>Закажите звонок </h2>
-				<P>Cпециалиста по подбору квартир</P>
-				<p>мы перезвоним через 14 секунд</p>
+				<h2>Запишитесь на  </h2>
+				<P>Шоу-рум открыт</P>
+					<p>Получите скидку 10 000 рублей за запись на просмотр сегодня</P>
+				
 				<input type="text">
 				<input type="text">
-				<botton>Отправить</botton>
+				<button>Записаться</button>
 			</form>
 		</div>
 	</div>
@@ -109,9 +110,10 @@
 				<div class="row">
 					<div class="tab">
 						<button class="tablinks" onclick="openCity(event, 'studio')"  id="defaultOpen">Студия</button>
-						<button class="tablinks" onclick="openCity(event, '1st')">Однушка</button>
-						<button class="tablinks" onclick="openCity(event, '2nd')">Двушка</button>
-						<button class="tablinks" onclick="openCity(event, '3rd')">Трешка</button>
+						<button class="tablinks" onclick="openCity(event, '1st')">1-комнатные</button>
+						<button class="tablinks" onclick="openCity(event, 'smart')">Смарт</button>
+						<button class="tablinks" onclick="openCity(event, '2nd')">2-комнатные</button>
+						<button class="tablinks" onclick="openCity(event, '3rd')">3-комнатные</button>
 					</div>
 
 
@@ -144,6 +146,23 @@
 										Жилая площадь 30.50 м2<br>
 										Стоимость уточняйте по телефону 48-48-48									
 									</p>
+									</div>
+								</div>
+					</div>
+					<div id="smart" class="tabcontent">
+						<div class="inner-testimonial">
+									<div class="col-lg-4">
+									<img src="img/rooms/2-1.jpg" alt="">
+								</div>
+									<div class="col-lg-8">
+									<h3 class="city-name">Двухкомнатная</h3>
+									<p class="text-testimonial">
+
+										Количество комнат 2<br>
+										Общая площадь 52.60 м2<br>
+										Жилая площадь 30.50 м2<br>
+										Стоимость уточняйте по телефону 48-48-48
+										</p>
 									</div>
 								</div>
 					</div>
@@ -210,6 +229,102 @@ document.getElementById("defaultOpen").click();
 </section>
 
 
+
+<section class="place " >
+<!-- 	<div class="white_gr_style" style="height: 502px;"></div> -->
+<h2>Расположение</h2>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2fb7cce1cf704eaa33271820cc33cba53a7231e6d2cb3438d5669a52908cdfa3&amp;width=100%25&amp;height=502&amp;lang=ru_RU&amp;scroll=false"></script>
+</section>
+
+
+
+
+
+<section class="ipoteka" style="height: 523px;">
+	<div class="white_style" style="height: 523px;">
+<div class="container">
+
+			<h2>Ипотека</h2>
+<div class="ipoteka_main row">
+<div class="col-md-6">
+
+<h3>Ипотека с государственной поддержкой</h3>
+<p>От 8%</p>
+<p>Сумма кредита: от 45 000 рублей</p>
+
+<p>Валюта: рубль</p>
+ 
+<p>Срок кредита: до 30 лет</p>
+ 
+<p>Первоначальный взнос: от 0%</p>
+</div>
+
+
+<div class="col-md-6 ipoteka_form">
+	<form id="form">
+		<input type="text">
+		<input type="text">
+		<input type="text">
+		<input type="text">
+		<button>Расчитать</button>
+	</form>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="ipoteka_banks" >
+<div class="container ">
+		<div class="row">
+			<h3>Банки партнеры</h3>
+<div class="col-md-4 bank_item">
+	<img src="img/icon/ross.jpg" alt="">
+
+</div>
+<div class="col-md-4 bank_item ">
+	<img src="img/icon/sber.png" alt="">
+
+</div>
+<div class="col-md-4 bank_item">
+	<img src="img/icon/vtb.png" alt="">	
+
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="photo" style="height: 500px;">
+	<div class="container">
+		<div class="col-md-12">
+			<div class="row">
+				<h2>Фото</h2>
+				
+
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<section class="order" style="height: 500px;">
+	<div class="container">
+		<div class="col-md-12">
+			<div class="row">
+				<h2>Порядок и условия покупки</h2>
+				
+
+			</div>
+		</div>
+	</div>
+
+
+
+</section>
+
 <section class="how_to_buy">
 <h2>Как купить</h2>
 
@@ -242,66 +357,23 @@ document.getElementById("defaultOpen").click();
 </div>
 </section>
 
-<section class="place " >
-<!-- 	<div class="white_gr_style" style="height: 502px;"></div> -->
-<h2>Расположение</h2>
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2fb7cce1cf704eaa33271820cc33cba53a7231e6d2cb3438d5669a52908cdfa3&amp;width=100%25&amp;height=502&amp;lang=ru_RU&amp;scroll=false"></script>
-</section>
-
-<section class="ipoteka" >
-<div class="container">
-
-			<h2>Ипотека</h2>
-		<div class="row">
-<div class="col-md-4 bank_item">
-	<img src="img/icon/ross.jpg" alt="">
-		<p>Ставка: <b>от 10%</b></p>
-	<p>Первоначальный взнос: <b>от 15</b></p>
-	<p>Срок кредитования: <b>30 лет</b></p>
-</div>
-<div class="col-md-4 bank_item ">
-	<img src="img/icon/sber.png" alt="">
-		<p>Ставка: <b>от 10%</b></p>
-	<p>Первоначальный взнос: <b>от 15</b></p>
-	<p>Срок кредитования: <b>30 лет</b></p>
-</div>
-<div class="col-md-4 bank_item">
-	<img src="img/icon/vtb.png" alt="">	
-	<p>Ставка: <b>от 10%</b></p>
-	<p>Первоначальный взнос: <b>от 15</b></p>
-	<p>Срок кредитования: <b>30 лет</b></p>
-</div>
-</div>
-</div>
-</section>
-
-
-
-<section class="contacts" style="height: 500px;">
-<h2>Контактная информация</h2>
-</section>
 
 
 
 
 
-<div class="hidden popUpform">
-
-	<form  id="form2">
-		<h2 style="font-weight: bold;">Оставить заявку</h2>
-		<p>позвонить по телефону <b>+7 (920) 154-31-54 </b></p>
-		<p>или заказать обратный звонок: <br>	
 
 
-			<input style="margin-top: 20px;" type="text" name="name" placeholder="Иванов Иван" required>
-			<input type="text" id="phone2" name="phone" placeholder="+7 (___) ___-__-__" required>
-			<button class="but_order" style="height: 53px;">Отправить</button>
-		</form>
+	<footer class="down_line" style="height: 250px;">	
+				<div class="container">
+		<div class="col-md-12">
+			<div class="row">
+				
+				
+
+			</div>
+		</div>
 	</div>
-
-
-	<footer class="down-line">	
-		
 	</footer>
 
 

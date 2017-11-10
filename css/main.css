@@ -94,8 +94,8 @@ header{
 }
 
 footer {
-      background-color: #333344;
-      color: #f0ecec;
+     // background-color: #333344;
+      //color: #f0ecec;
 }
 
 footer p{
@@ -107,7 +107,7 @@ footer p{
     background-color: rgba(51, 51, 68, 0.5);
 }
 .white_style{
-    background-color: rgba(255, 255, 255, 0.7);  
+    background-color: rgba(255, 255, 255, 0.3);  
 }
 
 .white_gr_style{
@@ -150,7 +150,7 @@ font-size: 18px;
 
 }
 .nav_right ul{
-  text-align: right;
+  text-align: center;
 }
 
 .nav_right ul li{
@@ -158,7 +158,7 @@ font-size: 18px;
   padding-left: 15px;
   color: #585550;
     padding-top: 20px;
-  vertical-align: top;
+  vertical-align: middle;
 
 }
 
@@ -168,7 +168,7 @@ font-size: 18px;
 }
 
 .nav_left ul{
-  text-align: left;
+  text-align: center;
 }
 
 .nav_left ul li{
@@ -176,15 +176,17 @@ font-size: 18px;
   padding-right: 15px;
   color: #585550;
   padding-top: 20px;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 
 
 .main_box{
  height: 667px;
- background-image: url(img/maxresdefault.jpg);
+ background-image: url(img/mbg.jpg);
  background-repeat: no-repeat;
+ -ms-background-position-x: 74%;
+ background-position-x: 74%;
  -webkit-background-size: auto;
  background-size: cover;
  position: relative;
@@ -267,28 +269,48 @@ div.tab button {
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 31px;
-    margin: 0px 10px;
-    width: 230px;
+    //margin: 0px 10px;
+    width: 224px;
+    color: rgba(69, 69, 69, 0.9);
 }
 
 /* Change background color of buttons on hover */
 div.tab button:hover {
-    background-color: #ddd;
-        background-color: rgba(255, 219, 77, 0.75);
+        background-color: #FF7373;
 }
 
 /* Create an active/current tablink class */
 div.tab button.active {
-    background-color: rgba(255, 219, 77, 1);
+    background-color: #FF4040;
+    color: #fff;
 }
 
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
+
     border-top: none;
 }
+
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+
+
+
 
 .how_to_buy {
 padding-bottom: 25px;
@@ -338,8 +360,42 @@ font-weight: 900;
 
 
 .ipoteka {
+    background-image: url(img/ipoteka.jpg);
+    background-size: 61%;
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+}
+
+.ipoteka_main {
+
 
 }
+
+.ipoteka_main p{
+  
+}
+
+
+.ipoteka_banks h3, .ipoteka h3{
+text-align: center;
+    padding: 0px 0;
+    font-size: 31px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    line-height: 35px;
+}
+
+.ipoteka_form{}
+
+.ipoteka_form input,.ipoteka_form button {
+  display: inline-block;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+
+}
+
 
 .bank_item{
   position: relative;
@@ -350,16 +406,12 @@ font-weight: 900;
      -moz-transition:  0.5s ease-out 0s;
      -o-transition:   0.5s ease-out 0s;
      transition:  0.5s ease-out 0s;
-     transform: scale(1);
-     min-height: 285px;
+     min-height: 100px;
 
 
 }
 
 .bank_item:hover{
-  top: -10px;
-
-  transform: scale(1.05);
 -webkit-box-shadow: 0px 25px 47px -12px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 25px 47px -12px rgba(0,0,0,0.75);
 box-shadow: 0px 25px 47px -12px rgba(0,0,0,0.75);
@@ -396,6 +448,15 @@ background-color: rgba(255,255,255,0.6);
     left: 0;
     right: 0;
 
+}
+
+
+
+.down_line {
+  background-image: url(img/footer-bg.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50%;
 }
 
 
