@@ -201,20 +201,65 @@ font-size: 18px;
 }
 
 .main_text_box p{
+    font-size: 40px;
+    //color: #545151;
+    color: #fff;
+    padding-top: 0px;
+    margin-top: 0px;
+    //background-color: #fff;
+    //padding: 5px 35px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.main_text_box h1{
+text-transform: uppercase;
+    font-size: 80px;
+    line-height: 59px;
+    text-align: center;
+}
+.offer_main {
+  text-align: center;
+  background-color: #fff;
+  overflow: auto;
+}
+
+
+.main_text_box button{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    display: block;
+    background-color: #FF4040;
+    border: 2px solid #FF4040;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 15px;
+
+         -webkit-transition:  1s ease-out 0s;
+     -moz-transition:  1s ease-out 0s;
+     -o-transition:  1s ease-out 0s;
+     transition:  1s ease-out 0s;
+    }
+
+    .main_text_box button:hover{
+    background-color: transparent;
+    color:#FF4040;
+    }
+.offer_main p{
     font-size: 30px;
     color: #545151;
     padding-top: 0px;
     margin-top: 0px;
     background-color: #fff;
     padding: 5px 35px;
-    text-transform: uppercase;
+    text-transform: none;
+    text-align: center;
+    margin: 15px 0px;
 }
 
-.main_text_box h1{
 
-    font-size: 51px;
-    line-height: 59px;
-}
 
 .main_form{
     position: relative;
@@ -312,37 +357,63 @@ div.tab button.active {
 
 
 
-.how_to_buy {
+.order {
 padding-bottom: 25px;
 }
 
+.order ul{
+    position: relative;
+    text-align: center;
+}
 
+.order ul li{
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    width: 24.7%;
+        vertical-align: top;
+        text-align: left;
+}
 
+.circle {
+      position: absolute;
+    top: -65px;
+}
+.circle svg{
+    height: 250px;
+}
+.circle circle{
+    cx: 172;
+    cy: 139;
+    r: 91;
+    fill: rgba(255, 115, 115, 0.2);
+    position: relative;
+  }
 .step_n {
-
+padding-right: 15px;
 }
 .step_n p{
-color: rgba(255, 219, 77, 0.75);
+    color: rgba(255, 115, 115, 0.6);
     position: absolute;
-    top: -80px;
-    left: -26px;
-    font-size: 150px;
-    font-family: sans-serif;
-    margin: 0;
+    top: -20px;
+    left: 175px;
+    font-size: 90px;
     z-index: -1;
-}
+    margin: 0px;
+  }
 
 
 .title_n{
-
+    padding-top: 40px;
 }
 
 .title_n h3{
 font-weight: 900;
+font-size: 25px;
 }
 
-.text_n{
-
+.text_n p{
+padding-right: 15px;
 }
 
 
