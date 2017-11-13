@@ -134,8 +134,6 @@ $(document).ready(function() {
 
 
 
-
-
 	$(".owl-carousel").owlCarousel({
 		loop:true,
 		items: 1,
@@ -163,6 +161,10 @@ $(document).ready(function() {
 	    }
 		}
 	});
+
+
+
+
 	$("#slider").owlCarousel({
         items: 1,
         loop: true,
@@ -174,48 +176,6 @@ $(document).ready(function() {
         nav: false,
 
     });
-
-	$(".owl-carousel2").owlCarousel({
-		loop:true,
-		items: 4,
-		//margin:130,
-		//autoplay:true,
-	    autoplayTimeout:6000,
-	    autoplayHoverPause:true,
-		//stagePadding: 30,
-		dots: false,
-		nav: true,
-		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-		navContainer: '#customNav',
-		responsive: {
-	    // > 0
-	    0 : {
-	      dots: false,
-	      margin:30,
-	      stagePadding: 30,
-	    },
-	    // > 768
-	    768 : {
-	    	margin:100,
-	    	stagePadding: 100,
-        dots: false,
-	    }
-		}
-	});
-	$("#slider").owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout:4000,
-	    autoplayHoverPause:true,
-        animateOut: 'fadeOut',
-        dots: true,
-        nav: false,
-
-    });
-
-
-
 
 
 
@@ -238,10 +198,6 @@ $(document).ready(function() {
 			$preloader.delay(350).fadeOut('slow');
 		});
 		// Прелоадер
-
-
-
-
 
 
 });

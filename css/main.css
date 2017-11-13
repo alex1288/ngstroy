@@ -385,7 +385,7 @@ padding-bottom: 25px;
 .circle circle{
     cx: 172;
     cy: 139;
-    r: 91;
+    r: 75;
     fill: rgba(255, 115, 115, 0.2);
     position: relative;
   }
@@ -416,16 +416,28 @@ font-size: 25px;
 padding-right: 15px;
 }
 
+.order a{
+text-align: center;
 
+    display: block;
+    margin: auto;
+    width: 285px;
+    padding: 5px 15px;
+    font-size: 25px;
+     color: #fff;
+  background-color: #FF4040;
+         -webkit-transition:   0.5s ease-out 0s;
+     -moz-transition:  0.5s ease-out 0s;
+     -o-transition:   0.5s ease-out 0s;
+     transition:  0.5s ease-out 0s;
 
+}
 
+.order a:hover {
 
+  background-color: rgba(255, 64, 64, 0.8);
 
-
-
-
-
-
+}
 
 
 
@@ -456,17 +468,71 @@ text-align: center;
     line-height: 35px;
 }
 
-.ipoteka_form{}
+.ipoteka_form{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0;
+}
 
-.ipoteka_form input,.ipoteka_form button {
-  display: inline-block;
-  width: 80%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  height: 40px;
+.ip_form_title p{
+  margin: 0;
+  text-align: center;
+  color: #fff;
+background-color: rgba(255, 64, 64, 0.6);
+    font-size: 36px;
+        line-height: 70px;
+}
+
+
+.ipoteka_form button {
+  color: #fff;
+  background-color: #FF4040;
+  border:none;
+       -webkit-transition:   0.5s ease-out 0s;
+     -moz-transition:  0.5s ease-out 0s;
+     -o-transition:   0.5s ease-out 0s;
+     transition:  0.5s ease-out 0s;
+         width: auto;
+    font-size: 31px;
+    overflow: visible;
+    padding: 5px 15px;
+    height: auto;
+}
+
+.ipoteka_form button:hover {
+
+  background-color: rgba(255, 64, 64, 0.8);
 
 }
 
+.ipoteka_form input,.ipoteka_form button {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+
+}
+.ipoteka_form button {
+  color: #fff;
+  background-color: #FF4040;
+  border:none;
+       -webkit-transition:   0.5s ease-out 0s;
+     -moz-transition:  0.5s ease-out 0s;
+     -o-transition:   0.5s ease-out 0s;
+     transition:  0.5s ease-out 0s;
+         width: auto;
+    font-size: 31px;
+    overflow: visible;
+    padding: 5px 15px;
+    height: auto;
+}
+
+.ipoteka_form button:hover {
+
+  background-color: rgba(255, 64, 64, 0.8);
+
+}
 
 .bank_item{
   position: relative;
@@ -549,13 +615,14 @@ background-color: rgba(255,255,255,0.6);
 }
 
 .inner-testimonial img{
-  width: 100%;
+  width: 250px;
   margin:0 auto 15px;
   opacity: 1;
   -webkit-transition:all 1.3s linear;
   transition:all 1.3s linear;
   margin-top: 25px;
 }
+
 
 .owl-item.active .inner-testimonial > img{
   -webkit-transition:all 1.3s linear;
