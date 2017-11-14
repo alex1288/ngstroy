@@ -547,6 +547,10 @@ text-align: center;
     padding: 0;
 }
 
+.ipoteka_form input{
+text-align: center;
+}
+
 .ip_form_title p{
   margin: 0;
   text-align: center;
@@ -617,7 +621,7 @@ background-color: rgba(255, 64, 64, 0.6);
      -moz-transition:  0.5s ease-out 0s;
      -o-transition:   0.5s ease-out 0s;
      transition:  0.5s ease-out 0s;
-     min-height: 100px;
+     min-height: 107px;
 
 
 }
@@ -683,6 +687,7 @@ background-color: rgba(255,255,255,0.6);
 .block-one-example {
   margin:30px 0;
   position: relative;
+  top: 200px;
 }
 
 .inner-testimonial {
@@ -783,7 +788,7 @@ h3.city-name {
 }
 
 .owl-my-nav .owl-next {
-  right:-30px;
+  right:-45px;
   text-align: right;
 }
 
