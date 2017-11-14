@@ -12,6 +12,33 @@ $(document).ready(function() {
 	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
 	$(".fancybox").fancybox();
 
+	// $(".iframe").fancybox({
+	// 	maxWidth	: 800,
+	// 	maxHeight	: 600,
+	// 	fitToView	: false,
+	// 	width		: '70%',
+	// 	height		: '70%',
+	// 	autoSize	: false,
+	// 	closeClick	: false,
+	// 	openEffect	: 'none',
+	// 	closeEffect	: 'none'
+	// });
+
+
+	$(".fancybox-thumb").fancybox({
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		helpers	: {
+			title	: {
+				type: 'outside'
+			},
+			thumbs	: {
+				width	: 50,
+				height	: 50
+			}
+		}
+	});
+
 	//Навигация по Landing Page
 	//$(".top_mnu") - это верхняя панель со ссылками.
 	//Ссылки вида <a href="#contacts">Контакты</a>
@@ -133,7 +160,6 @@ $(document).ready(function() {
 
 
 
-
 	$(".owl-carousel").owlCarousel({
 		loop:true,
 		items: 1,
@@ -173,46 +199,6 @@ $("#slider").owlCarousel({
         nav: false,
 
     });
-$(".owl-carousel2").owlCarousel({
-		loop:true,
-		items: 1,
-		//margin:130,
-		//autoplay:true,
-	    autoplayTimeout:6000,
-	    autoplayHoverPause:true,
-		//stagePadding: 30,
-		dots: false,
-		nav: true,
-		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-		navContainer: '#customNav2',
-		responsive: {
-	    // > 0
-	    0 : {
-	      dots: false,
-	      margin:30,
-	      stagePadding: 30,
-	    },
-	    // > 768
-	    768 : {
-	    	margin:100,
-	    	stagePadding: 100,
-        dots: false,
-	    }
-		}
-	});
-
-	$("#slider").owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout:4000,
-	    autoplayHoverPause:true,
-        animateOut: 'fadeOut',
-        dots: true,
-        nav: false,
-
-    });
-
 
 
 
@@ -235,5 +221,26 @@ $(".owl-carousel2").owlCarousel({
 		});
 		// Прелоадер
 
-
+$(function() {     
+  //при нажатии на ссылку, содержащую Thumbnail
+  $('a.thumbnail').click(function(e) {
+    //отменить стандартное действие браузера
+    e.preventDefault();
+    //присвоить атрибуту scr элемента img модального окна
+    //значение атрибута scr изображения, которое обёрнуто
+    //вокруг элемента a, на который нажал пользователь
+    $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));
+    //открыть модальное окно
+    $("#image-modal").modal('show');
+  });
+  //при нажатию на изображение внутри модального окна 
+  //закрыть его (модальное окно)
+  $('#image-modal .modal-body img').on('click', function() {
+    $("#image-modal").modal('hide')
+  });
 });
+
+
+
+
+}); 
