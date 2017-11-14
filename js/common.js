@@ -162,7 +162,7 @@ $(document).ready(function() {
 
 	$(".owl-carousel").owlCarousel({
 		loop:true,
-		items: 1,
+		items: 3,
 		//margin:130,
 		//autoplay:true,
 	    autoplayTimeout:6000,
@@ -181,8 +181,8 @@ $(document).ready(function() {
 	    },
 	    // > 768
 	    768 : {
-	    	margin:100,
-	    	stagePadding: 100,
+	    	margin:10,
+	    	stagePadding: 10,
         dots: false,
 	    }
 		}

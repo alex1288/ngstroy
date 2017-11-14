@@ -394,6 +394,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 }
 
+.advantages_items p{
+font-weight: 900;
+}
+
 .advantages_items ul{
   
 }
