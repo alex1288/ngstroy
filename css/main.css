@@ -756,7 +756,7 @@ text-align: right;
 /*==========Карусель ==========*/
 .carousel-inner>.item>a>img, .carousel-inner>.item>img{
       padding: 15px 60px;
-      max-width: 440px;
+     // max-width: 440px;
 }
 .item {
   width: 100%;
