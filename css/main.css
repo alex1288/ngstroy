@@ -184,7 +184,38 @@ width: 100%;
   vertical-align: middle;
 
 }
-
+.nav_right .but_order_top {
+position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    cursor: pointer;
+    /* height: 53px; */
+    /* width: 70%; */
+    /* max-width: 550px; */
+    margin: auto;
+    font-size: 21px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #371400;
+    font-weight: 300;
+    border: none;
+    /* border-bottom: 3px solid #D0730C; */
+    /* border-radius: 10px; */
+    outline: none;
+    box-sizing: border-box;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8c335', endColorstr='#fdaa38',GradientType=0 );
+    position: relative;
+    overflow: hidden;
+    box-shadow: none;
+    font-size: 19px;
+    background: rgba(255, 64, 64, 0.74);
+}
+.but_order_top:hover {
+  background-position: -200% 0, 0 0;
+  background: #FF4040;
+}
 
 .nav_left{
 
@@ -680,12 +711,12 @@ background-color: rgba(255, 64, 64, 0.6);
 
 }
 
-.bank_item:hover{
+/*.bank_item:hover{
 -webkit-box-shadow: 0px 25px 47px -12px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 25px 47px -12px rgba(0,0,0,0.75);
 box-shadow: 0px 25px 47px -12px rgba(0,0,0,0.75);
 background-color: #fff;
-}
+}*/
 
 .bank_item img{
     width: 80%;
