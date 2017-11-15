@@ -56,31 +56,35 @@ $(document).ready(function() {
 
 	//Плавный скролл до блока .div по клику на .scroll
 	//Документация: https://github.com/flesler/jquery.scrollTo
-	// $(".scroll").click(function() {
-	// 	$.scrollTo($("#price"), 800, {
-	// 		offset: -90
-	// 	});
-	// });
 
-	// $(".scroll").click(function() {
-	// 	$.scrollTo($("#works"), 800, {
-	// 		offset: -90
-	// 	});
-	// });
+	$("#menu").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+		
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
 
 
-	// $(".scroll").click(function() {
-	// 	$.scrollTo($("#reviews"), 800, {
-	// 		offset: -90
-	// 	});
-	// });
+	$("#menu2").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
 
-	// $("a.scroll").click(function() {
-	// 	$.scrollTo($(".div"), 800, {
-	// 		offset: -90
-	// 	});
-	// });
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
 
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+		
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
 	//Каруселька
 	//Документация: 
 	// var owl = $(".carousel");
@@ -175,15 +179,20 @@ $(document).ready(function() {
 		responsive: {
 	    // > 0
 	    0 : {
+	    	items: 1,
 	      dots: false,
-	      margin:30,
-	      stagePadding: 30,
+	      margin:5,
+	      stagePadding: 5,
+	       dots: true,
+        nav: false,
 	    },
 	    // > 768
 	    768 : {
-	    	margin:10,
-	    	stagePadding: 10,
-        dots: false,
+	    	items: 3,
+	    	margin:5,
+	    	stagePadding: 5,
+        dots: true,
+        nav: false,
 	    }
 		}
 	});
@@ -239,7 +248,6 @@ $(function() {
     $("#image-modal").modal('hide')
   });
 });
-
 
 
 

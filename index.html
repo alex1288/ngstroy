@@ -36,7 +36,7 @@
 	<link rel="stylesheet" href="css/fm.revealator.jquery.min.css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" />
 
-
+<script>switch(Data=new Date,Year=Data.getFullYear(),Month=Data.getMonth(),Day=Data.getDate(),Month){case 0:fMonth="января";break;case 1:fMonth="февраля";break;case 2:fMonth="марта";break;case 3:fMonth="апреля";break;case 4:fMonth="мае";break;case 5:fMonth="июня";break;case 6:fMonth="июля";break;case 7:fMonth="августа";break;case 8:fMonth="сентября";break;case 9:fMonth="октября";break;case 10:fMonth="ноября";break;case 11:fMonth="декабря"}</script>
 
 </head>
 
@@ -45,69 +45,99 @@
 
 	<!-- <div id="page-preloader"><span class="spinner"></span></div> -->
 	
-<header class="header_box" >
-	<div class="top_line">
-		<div class="container">
-			<div class="row">
-		<div class="nav_left col-md-5 col-xs-5 col-sm-5">
-			<ul>
-				<li>Цены и <br>планировки</li>
-				<li>Расположение</li>
-				<li>Фото</li>
-			</ul>
-		</div>
-		<div class="main_logo  col-md-2 col-xs-2 col-sm-2">
-			
-		</div>
+	<header class="header_box" >
+		<div class="top_line">
+			<div class="container">
+				<div class="row">
+					<div class="float_l hidden-lg hidden-md col-sm-2 col-xs-3"> 
+
+						
+						<div id="mySidenav" class="sidenav">
+							
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+							<a href="#apartment">Цены и планировки</a>
+							<a href="#place">Расположение</a>
+							<a href="#">Преимущества</a>
+							<a href="#">Фото</a>
+							<a href="#">Оформление квартиры</a>
+							<a href="#">Расчитать ипотеку</a>
+							<a href="#">Контакты</a>
+							
+
+						</div>
+						<span class="m-nav" onclick="openNav()">&#9776; </span>
+						
+					
+					</div>
+					<div class="nav_left col-md-5 hidden-xs hidden-sm">
+						<ul>
+							<nav id="menu">
+
+							<li><a href="#apartment">Цены и <br>планировки</a></li>
+							<li><a href="#place">Расположение</a></li>
+							<li><a href="#">Фото</a></li>
+						</nav>
+						</ul>
+					</div>
+					<div class="main_logo  col-md-2 col-xs-6 col-sm-8">
+
+					</div>
 
 
-		<div class="nav_right   col-md-5 col-xs-5 col-sm-5">
-			<ul>
-				<li>Оформление <br>квартиры</li>
-				<li>Расчитать<br> ипотеку</li>
-				<li><i class="fa fa-phone" aria-hidden="true"></i> +7 (4822)48-48-48
-<p style="margin-top: 0;">
-	<a>заказать звонок</a>
-</p>
-				</li>
-			</ul>
-		</div>	
-</div>	
-</div>
-	</div>
-
-</header>
-
-<section class="main_box" >
-<div class="gray_style"  style="height: 667px;">
-
-<div class="container ">
-	<div class="row">
-		<div class="col-lg-12 main_text_box">
-			<h1>ЖК "Новый город"</h1>
-			<div class="offer_main"><p>Квартиры в новостройке от 890 <span style="text-transform: none;">т. р.</span></p></div>
-			<div class="blur" style="">
-				<P>Шоу-рум открыт! <br>Оставьте заявку и <b>получите скидку 10 000 рублей</b><br> за запись на просмотр сегодня </P>
-
-			<button>Записаться</button>
+					<div class="nav_right   col-md-5 col-sm-2 col-xs-3">
+						<ul>
+							<nav id="menu">
+							<li class="hidden-xs hidden-sm"><a href="#">Оформление <br>квартиры</a></li>
+							<li class="hidden-xs hidden-sm"><a href="#">Расчитать<br> ипотеку</a></li>
+						
+							<li><div class=""><a  href="tel:+79169114847"><i class="fa fa-phone" aria-hidden="true"></i> <span class="hidden-xs hidden-sm">+7 (4822)48-48-48</span></div></a>
+								<p style="margin-top: 0;">
+									<a class="hidden-xs hidden-sm">заказать звонок</a>
+								</p>
+								</nav>
+							</li>
+						</ul>
+					</div>	
+				</div>	
 			</div>
-
 		</div>
 
+	</header>
+
+<section class="main_box h723" >
+	<div class="gray_style h723"  style="height: 667px;height: 723px;">
+		<script></script>
+
+		<div class="container ">
+			<div class="row">
+				<div class="col-lg-12 main_text_box">
+					<h1>ЖК "Новый город"</h1>
+					<div class="offer_main"><p>Квартиры в новостройке от 890 <span style="text-transform: none;">т. р.</span></p></div>
+					<div class="blur" style="">
+						<P>Шоу-рум открыт! <br>Оставьте заявку и <span>получите скидку 10&nbsp;000 рублей*</span><br> за запись на просмотр сегодня
+						</P>
+
+						<a href="#form" class="popap">Записаться</a>
+						<div class="small_p"><P>*Предложение актуально до <script>
+						document.write(" "+Day+" "+fMonth+" "+Year+" года")</script></P></div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
 	</div>
-</div>
-</div>
 </section>
 
 
 
 
-<section class="plan_app" >
+<section class="plan_app" id="apartment" >
 	<div class="white_style" >
 
 		<div class="container">
 			<h2>Планировки квартир</h2>
-			<div class="col-md-12">
+			<div class="">
 				<div class="row">
 					<div class="tab">
 						<button class="tablinks" onclick="openCity(event, 'studio')"  id="defaultOpen">Студия</button>
@@ -164,10 +194,16 @@
 							<h3 class="city-name">Студия</h3>
 							<p class="text-testimonial">
 								Количество комнат 1<br>
-								Общая площадь 52.60 м2<br>
-								Жилая площадь 30.50 м2<br>	
-								Стоимость: ОТ 890 ТЫС.РУБ!
-							</p></div>
+								Общая площадь 23.40 м2<br>
+								Жилая площадь 16.40 м2<br>	
+								Стоимость: от <span>890 ТЫС.РУБ!</span>
+								
+								<br>
+									<a href="#form" class="popap">Заказать звонок специалиста</a>
+								</p>
+							
+
+						</div>
 						</div>
 
 
@@ -221,10 +257,12 @@
 									<h3 class="city-name">Однокомнатная</h3>
 									<p class="text-testimonial">
 										Количество комнат 1<br>
-										Общая площадь 52.60 м2<br>
-										Жилая площадь 30.50 м2<br>
-										Стоимость: ОТ 1,3 МЛН.РУБ!									
-									</p>
+										Общая площадь от 32.4 м2<br>
+										Жилая площадь 29.70 м2<br>
+										Стоимость: от <span>1,3 МЛН.РУБ!</span>
+								<br>
+									<a href="#form" class="popap">Заказать звонок специалиста</a>
+								</p>
 								</div>
 							</div>
 						
@@ -276,10 +314,12 @@
 									<p class="text-testimonial">
 
 										Количество комнат 1<br>
-										Общая площадь 52.60 м2<br>
-										Жилая площадь 30.50 м2<br>
-										Стоимость: ОТ 1,6 МЛН.РУБ!
-										</p>
+										Общая площадь от 32.4 м2<br>
+										Жилая площадь от 29.70 м2<br>
+										Стоимость: от <span>1,6 МЛН.РУБ!</span>
+								<br>
+									<a href="#form" class="popap">Заказать звонок специалиста</a>
+								</p>
 									</div>
 								
 					</div>
@@ -331,9 +371,11 @@
 								<p class="text-testimonial">
 
 									Количество комнат 2<br>
-									Общая площадь 52.60 м2<br>
-									Жилая площадь 30.50 м2<br>
-									Стоимость: ОТ 2 МЛН.РУБ!
+									Общая площадь от 52.60 м2<br>
+									Жилая площадь от 30.50 м2<br>
+									Стоимость: от <span>2 МЛН.РУБ!</span>
+								<br>
+									<a href="#form" class="popap">Заказать звонок специалиста</a>
 								</p>
 							</div>
 						
@@ -342,7 +384,7 @@
 					<div id="3rd" class="tabcontent">
 						
 								<div class="col-lg-5">
-									<div id="carousel-notification4" class="bootstrap-carousel" data-indicators="false" data-controls="true" data-interval="false">
+									<div id="carousel-notification5" class="bootstrap-carousel" data-indicators="false" data-controls="true" data-interval="false">
 									
 
 
@@ -393,19 +435,22 @@
 								<span class="sr-only">Next</span>
 							</a>
 								</div>
+									</div>
 							<!-- Карусель -->
 
-	</div>
+
 							
 								<div class="col-lg-7">
 									<h3 class="city-name">Трехкомнатная</h3>
 									<p class="text-testimonial">
-										Количество комнат 1<br>
-										Общая площадь 52.60 м2<br>
-										Жилая площадь 30.50 м2<br>	
-										Стоимость: ОТ 2,7 МЛН.РУБ!
-									</p>
-									<p>Посмотреть</p>
+										Количество комнат 3<br>
+										Общая площадь от 72.90 м2<br>
+										Жилая площадь от 43.60 м2<br>	
+										Стоимость: от <span>2,7 МЛН.РУБ!</span>
+								<br>
+									<a href="#form" class="popap">Заказать звонок специалиста</a>
+								</p>
+								
 
 
 								</div>
@@ -448,7 +493,7 @@ document.getElementById("defaultOpen").click();
 
 
 
-<section class="place " >
+<section class="place " id="place" >
 <!-- 	<div class="white_gr_style" style="height: 502px;"></div> -->
 <h2>Расположение</h2>
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac6d010370c68fb75b5667e0402cb52cda002632d2d5c647c8512f4e3adc4faac&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
@@ -518,20 +563,22 @@ document.getElementById("defaultOpen").click();
 
 
 
-<section class="photo" style="height: 700px;">
-	<div class="white_style" style="height: 700px;">
+<section class="photo" >
+	<div class="white_style h700" style="height: 700px;">
 	<div class="container ">
 		<div class="col-md-12">
 			<div class="row">
-				<h2>Фото / Видео</h2>
+				<h2>Фото </h2>
 				
 							<div class="block-one-example">
 					<div id="customNav" class="owl-my-nav"></div>
 					<div class="owl-carousel block-items">
 						<div class="item">
 							<div class="inner-testimonial works_item">
+								<a class="fancybox-thumb plan_app_item"   href="images/1.jpg" title=" "  data-fancybox-group="group6">
+								
 
-									<img  src="images/dsc09700.jpg" alt="">
+									<img  src="images/1.jpg" alt=""></a>
 									
 
 							</div>
@@ -539,21 +586,109 @@ document.getElementById("defaultOpen").click();
 						<div class="item">
 							<div class="inner-testimonial works_item">
 
-									<img src="images/dsc09700.jpg" alt="">
-<!-- <a class="fancybox" data-fancybox-group="group"><img src="img/1.jpg" /> -->
+									<a class="fancybox-thumb plan_app_item"   href="images/2.jpg" title=" "  data-fancybox-group="group6">
+								
+
+									<img  src="images/2.jpg" alt=""></a>
 							</div>
 						</div>
 						<div class="item">
 							<div class="inner-testimonial works_item">
 
-									<img  src="images/dsc09700.jpg" alt="">
+									<a class="fancybox-thumb plan_app_item"   href="images/3.jpg" title=" "  data-fancybox-group="group6">
+								
+
+									<img  src="images/3.jpg" alt=""></a>
 
 							</div>
 						</div>
 						<div class="item">
 							<div class="inner-testimonial works_item">
 
-									<img  src="images/dsc09700.jpg" alt="">
+									<a class="fancybox-thumb plan_app_item"   href="images/4.jpg" title=" "  data-fancybox-group="group6">
+								
+
+									<img  src="images/4.jpg" alt=""></a>
+
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="inner-testimonial works_item">
+
+									<a class="fancybox-thumb plan_app_item"   href="images/5.jpg" title=" "  data-fancybox-group="group6">
+								
+
+									<img  src="images/5.jpg" alt=""></a>
+
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="inner-testimonial works_item">
+
+									<a class="fancybox-thumb plan_app_item"   href="images/6.jpg" title=" "  data-fancybox-group="group6">
+								
+
+									<img  src="images/6.jpg" alt=""></a>
+
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="inner-testimonial works_item">
+
+									<a class="fancybox-thumb plan_app_item"   href="images/7.jpg" title=" "  data-fancybox-group="group6">
+								
+
+									<img  src="images/7.jpg" alt=""></a>
+
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="inner-testimonial works_item">
+
+									<a class="fancybox-thumb plan_app_item"   href="images/8.jpg" title=" "  data-fancybox-group="group6">
+								
+
+									<img  src="images/8.jpg" alt=""></a>
+
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="inner-testimonial works_item">
+
+									<a class="fancybox-thumb plan_app_item"   href="images/9.jpg" title=" "  data-fancybox-group="group6">
+								
+
+									<img  src="images/9.jpg" alt=""></a>
+
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="inner-testimonial works_item">
+
+									<a class="fancybox-thumb plan_app_item"   href="images/10.jpg" title=" "  data-fancybox-group="group6">
+								
+
+									<img  src="images/10.jpg" alt=""></a>
+
+							</div>
+						</div>
+
+						
+
+
+						<div class="item">
+							<div class="inner-testimonial works_item">
+
+									<a class="fancybox-thumb plan_app_item"   href="images/12.jpg" title=" "  data-fancybox-group="group6">
+								
+
+									<img  src="images/12.jpg" alt=""></a>
 
 							</div>
 						</div>
@@ -567,7 +702,7 @@ document.getElementById("defaultOpen").click();
 </div>
 </section>
 
-<section class="order" style="    height: 550px;">
+<section class="order" >
 	<div class="container">
 		<div class="col-md-12">
 			<div class="row">
@@ -634,8 +769,8 @@ document.getElementById("defaultOpen").click();
 
 
 
-<section class="ipoteka" style="height: 600px;">
-	<div class="white_style" style="height: 600px;">
+<section class="ipoteka" >
+	<div class="white_style" >
 		<div class="container">
 
 			<h2>Ипотека</h2>
@@ -643,14 +778,16 @@ document.getElementById("defaultOpen").click();
 				<div class="col-md-7">
 
 					<h3>Ипотека с государственной поддержкой</h3>
-					<p>От 8%</p>
-					<p>Сумма кредита: от 45 000 рублей</p>
+					<div class="ipoteka_txt">
+					<p>От <span>8%</span></p>
+					<p>Сумма кредита: от <span>45 000 рублей</span></p>
 
 					<p>Валюта: рубль</p>
 
-					<p>Срок кредита: до 30 лет</p>
+					<p>Срок кредита: до <span>30 лет</span></p>
 
-					<p>Первоначальный взнос: от 0%</p>
+					<p>Первоначальный взнос: от <span>0%</span></p>
+					</div>
 				</div>
 
 
@@ -658,7 +795,7 @@ document.getElementById("defaultOpen").click();
 					<div class="ip_form_title">
 						<p>Расчитать ипотеку</p>		
 					</div>
-					<form id="form">
+					<form >
 						<input type="text" placeholder="Первоначальный взнос">
 						<input type="text" placeholder="Стоимость квартиры">
 						<input type="text" placeholder="Ваше имя">
@@ -698,31 +835,59 @@ document.getElementById("defaultOpen").click();
 
 
 
-	<footer class="down_line" style="height: 250px;">	
+	<footer class="down_line">	
 				<div class="container">
 		
 			<div class="row">
-				<div class="col-md-5 down_line_l">
+				<div class="col-md-5 col-sm-5 down_line_l">
+					<p>&nbsp;</p>
 				<p><a href="#">Политика конфиденциальности</a></p>
 				<p>Проектная декларация на сайте <a href="#">ngstroy.com</a></p>
 
 			</div>
-			<div class="col-md-2 footer_logo">
+			<div class="col-md-2 col-sm-2 footer_logo hidden-xs">
 				<img src="css/img/logo.png" alt="">
 
 			</div>
-			<div class="col-md-5 down_line_r">
+			<div class="col-md-5 col-sm-5 down_line_r">
 				<p>Остались вопросы? Позвоните нам!</p>
 				<p><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> +7 (4822) 64-10-11</a></p>
 				<p><a href="#">Обратный звонок</a></p>
 
 			</div>
-			<div class="col-md-12">
+			<div class="col-md-12 col-sm-12 small_p_f">
 				<p>Вся представленная на сайте информация носит информационный характер и ни при каких условиях не <br>
 является публичной офертой, определяемой положениями ст. 437 ГК РФ.</p>
 			</div>
 		</div>
 	</div>
+	<div class="hidden popUpform">
+
+	<form  id="form">
+		<h2 style="font-weight: bold;">Заказать звонок</h2>
+		<p>Вы можете позвонить по телефону<br> <b>+7&nbsp;(4822)&nbsp;64&nbsp;10&nbsp;11</b></p>
+		<p>или заказать обратный звонок: <br>	
+			<input style="margin-top: 20px; " type="text" name="name" placeholder="Иванов Иван" required>
+			<input type="text" id="phone4" name="phone" placeholder="+7 (___) ___-__-__" required>
+			<button class="but_order" style="height: 53px;">Отправить</button>
+		</form>
+	</div>
+	<script>
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+}
+
+</script>
 	</footer>
 
 

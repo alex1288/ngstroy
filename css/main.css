@@ -52,7 +52,7 @@ h1{
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 300;
   text-transform: uppercase;
   color:#585550;
@@ -119,7 +119,9 @@ background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
 }
 
-
+.h723{
+height: 723px;
+}
 .header_box{
 font-size: 18px;
 position: absolute;
@@ -134,10 +136,17 @@ width: 100%;
     background-position: bottom center;
         z-index: 1000;
 }
+.float_l span{
+      font-size: 50px;
+    color: #535353;
+    top: 25px;
+    position: relative;
+}
+
 
 .main_logo{
     background-image: url(img/logo.png);
-    z-index: 1000;
+    z-index: 999;
 
     height: 170px;
     background-position: 50% 50%;
@@ -148,6 +157,13 @@ width: 100%;
 
 .nav_right {
 
+}
+
+.nav_right i{
+      font-size: 50px;
+    color: #535353;
+    top: 25px;
+    position: relative;
 }
 .nav_right ul{
   text-align: center;
@@ -182,7 +198,7 @@ width: 100%;
 
 
 .main_box{
- height: 667px;
+background-attachment: fixed;
  background-image: url(img/mbg.jpg);
  background-repeat: no-repeat;
  -ms-background-position-x: 74%;
@@ -201,7 +217,7 @@ width: 100%;
 }
 
 .main_text_box p{
-    font-size: 40px;
+    font-size: 31px;
     //color: #545151;
     color: #fff;
     padding-top: 0px;
@@ -230,7 +246,8 @@ text-align: center;
 }
 
 
-.main_text_box button{
+.main_text_box a{
+  width: 270px;
     position: relative;
     margin: auto;
     text-align: center;
@@ -240,15 +257,16 @@ text-align: center;
     font-size: 30px;
     color: #fff;
     margin-bottom: 15px;
-
+cursor: pointer;
          -webkit-transition:  1s ease-out 0s;
      -moz-transition:  1s ease-out 0s;
      -o-transition:  1s ease-out 0s;
      transition:  1s ease-out 0s;
     }
 
-    .main_text_box button:hover{
+    .main_text_box a:hover{
     background-color: transparent;
+    text-decoration: none;
     color:#FF4040;
     }
 .offer_main p{
@@ -263,33 +281,27 @@ text-align: center;
     margin: 0;
 }
 
-
-
-.main_form{
-    position: relative;
-  top:150px;
-  color: #fff;
-}
-.main_form h2{
-  color:#fff;
-}
-.main_form p{ 
-
-  color: #fff;
-
-}
-.main_form form{
-  text-align: center;
+.blur{
+background-color: rgba(51, 51, 68, 0.8);
+    width: 80%;
+    margin: auto;
+    padding: 25px 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 1px solid rgb(255, 64, 64);
 }
 
 
-.main_form input{
-  display: block;
-  margin: auto;
-  margin-bottom: 20px;
-  width: 75%;
-  text-align: center;
+.blur span{
+font-weight: 900;
+color: rgb(253, 217, 217);
 }
+.small_p p{
+font-size: 16px;
+text-transform: none;
+}
+
+
 
 
 .plan_app {
@@ -302,7 +314,7 @@ text-align: center;
 .plan_app_item  a{
 height: 100%;
     position: absolute;
-    width: 75%;
+    width: 69%;
     z-index: 1000;
     left: 0;
     right: 0;
@@ -310,10 +322,34 @@ height: 100%;
 }
 
 
+.plan_app .text-testimonial a {
+  cursor: pointer;
+  color: #fff;
+  background-color: #FF4040;
+  border:none;
+       -webkit-transition:   0.5s ease-out 0s;
+     -moz-transition:  0.5s ease-out 0s;
+     -o-transition:   0.5s ease-out 0s;
+     transition:  0.5s ease-out 0s;
+         width: auto;
+    font-size: 23px;
+    overflow: visible;
+    padding: 5px 15px;
+    height: auto;
+    top: 25px;
+    position: relative;
+}
+
+.plan_app .text-testimonial a:hover {
+text-decoration: none;
+  background-color: rgba(255, 64, 64, 0.8);
+
+}
+
 /* Style the tab */
 div.tab {
 overflow: hidden;
-
+border-bottom: none;
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -393,7 +429,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 .advantages_items p{
-font-weight: 900;
+/*font-weight: 900;*/
 }
 
 .advantages_items ul{
@@ -412,20 +448,23 @@ font-weight: 900;
 width: 60%;
 }
 
-.photo{
+.h700{
+  height: 700px;
+}
 
+.photo{
+height: 700px;
   background-image: url(img/photo.jpg);
   -webkit-background-size: cover;
   background-size: cover;
+  background-position-x:50%;
 }
 
 
 .order {
 padding-bottom: 40px;
-/*background-image: url(img/gray-bg.jpg);
--webkit-background-size: cover;
-background-size: cover;*/
 
+height: 550px;
 background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 14%, rgba(0,0,0,0) 27%, rgba(0,0,0,0.20) 99%, rgba(0,0,0,0.20) 100%); /* FF3.6-15 */
 background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 14%,rgba(0,0,0,0) 27%,rgba(0,0,0,0.20) 99%,rgba(0,0,0,0.20) 100%); /* Chrome10-25,Safari5.1-6 */
 background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 14%,rgba(0,0,0,0) 27%,rgba(0,0,0,0.20) 99%,rgba(0,0,0,0.20) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -435,7 +474,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .order ul{
     position: relative;
     text-align: center;
-    top: 65px;
+    top: 70px;
 }
 
 .order ul li{
@@ -516,7 +555,7 @@ text-align: center;
 
 .ipoteka {
     background-image: url(img/ipoteka1.jpg);
-    background-size: 71%;
+    background-size: 76%;
     background-position: 100% 0%;
     background-repeat: no-repeat;
 }
@@ -525,9 +564,15 @@ text-align: center;
 
 
 }
-
-.ipoteka_main p{
-  
+.ipoteka_txt{
+  margin-top: 25px;
+}
+.ipoteka_txt p{
+  font-size: 25px;
+}
+.ipoteka_txt span{
+font-weight: 900;
+font-size: 31px
 }
 
 
@@ -543,6 +588,8 @@ text-align: center;
 .ipoteka_form{
     background-color: rgba(255, 255, 255, 0.8);
     padding: 0;
+    top: 25px;
+    position: relative;
 }
 
 .ipoteka_form input{
@@ -674,13 +721,20 @@ background-color: rgba(255,255,255,0.6);
   background-position: 50%;
   color: rgb(51, 51, 68);
 }
+.down_line p{
+  font-size: 21px;
+}
 
 .down_line a{
    color: blue;
 }
-
+.small_p_f p {
+    font-size: 16px;
+    text-transform: none;
+}
 .footer_logo img{
   width: 100%;
+  max-width: 170px;
 }
 
 .down_line_l{
@@ -693,7 +747,10 @@ text-align: right;
 
 
 /*==========Карусель ==========*/
-
+.carousel-inner>.item>a>img, .carousel-inner>.item>img{
+      padding: 15px 60px;
+      max-width: 440px;
+}
 .item {
   width: 100%;
 }
@@ -707,6 +764,7 @@ text-align: right;
 .inner-testimonial {
   text-align: center;
   background-color: transparent;
+  max-height: 229px;
 }
 
 .inner-testimonial img{
@@ -731,6 +789,7 @@ text-align: right;
 }
 
 h3.city-name {
+  margin-bottom: 25px;
   padding:0px 0;
   font-size: 31px;
   font-family: "Roboto", sans-serif;
@@ -756,6 +815,11 @@ h3.city-name {
     font-weight: 300;
     line-height: 35px;
     text-align: left;
+}
+
+.text-testimonial span{
+  color: rgba(255, 64, 64, 0.8);
+      font-weight: 900;
 }
 .block-items {
   cursor: default;
@@ -813,8 +877,186 @@ h3.city-name {
 /*==========Карусель END ==========*/
 
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+/*всплывающая форма обратной связи начало*/
+.mfp-close{
+  color: #FFF;
+}
+.mfp-content h2{
+  text-align: center;
+  margin-top: 10px;
+}
 
 
+.button_form{
+  height: 40px;
+  width: 76%;
+  margin: 5px 12%;
+}
+
+.mfp-content form {
+  /*padding: 15px 40px 15px 40px;*/
+  padding: 44px 65px;
+  background-color: #f7f7f7;
+  width: 600px;
+  margin: auto;
+  position: relative;
+  color: #222222;
+  border-radius: 5px;
+  text-align: center;
+}
+.mfp-content form h2 {
+  font-size: 27px;
+      margin-bottom: 0px;
+}
+
+.mfp-content form input{
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 21px;
+  text-align: center;
+  height: 40px;
+  color: #000;
+  line-height: 36px;
+
+}
+
+.mfp-content form textarea{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.mfp-content form p{
+  margin:10px 0px;
+
+}
+
+
+.pop_form input[type="text"] {
+  display: block;
+  line-height: 24px;
+  margin: 0 auto 12px;
+  width: 90%;
+  border: #999 1px solid;
+}
+.pop_form .button {
+  margin: 20px auto 0;
+}
+.pop_form h3 {
+  margin: 10px auto 15px;
+  text-align: center;
+  font-weight: normal;
+  font-family: "RobotoCondensedBold";
+  text-transform: uppercase;
+}
+
+
+
+.mfp-content input {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  height: 50px;
+  line-height: 75px;
+  text-align: center;
+  background: #f9f9f9;
+  color: #999;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  outline: none;
+  border-bottom: 1px solid #bebebe;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+
+.mfp-content input:focus {
+  //border-bottom: 2px solid #6bace1;
+  border-bottom: 2px solid #e1b52a;
+
+
+}
+.but_order{
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  cursor: pointer;
+  height: 53px;
+  width: 70%;
+  max-width: 550px;
+  margin: auto; 
+  font-size: 21px;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #371400;
+  font-weight: 300;
+  border: none;
+/*  border-bottom: 3px solid #D0730C;*/
+/*  border-radius: 10px;*/
+  outline: none;
+  box-sizing: border-box;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8c335', endColorstr='#fdaa38',GradientType=0 );
+  position: relative;
+  overflow: hidden;
+     
+    background: rgba(0, 0, 0, 0.06);
+    box-shadow: none;
+    font-size: 27px;
+    background: rgba(225, 181, 42, 0.74);
+}
+.mfp-content button.but_order:active {
+  top: 2px;
+  box-shadow: none;
+}
+.mfp-content button.but_order:hover {
+  background-position: -200% 0, 0 0;
+  background: rgba(225, 181, 42, 0.94);
+}
+
+/*всплывающая форма обратной связи end*/
 
 
                       /*Мобильная версия*/
@@ -830,13 +1072,25 @@ h3.city-name {
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+.down_line_l p, .down_line_r p{ font-size: 16px;}
 }
 
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+.advantages_items ul li {    width: 49%;}
+.advantages_items ul {    text-align: center;}
+.order ul li {width: 100%;}
+.order ul {top: 0px;}
+.order {height: auto;}
+.main_text_box h1 {font-size: 30px;}
+.offer_main {width: 100%;}
+.offer_main p {font-size: 25px;}
+.blur {width: 100%;    margin-top: 10px;}
+.main_text_box p {font-size: 25px;}
+.down_line_l, .down_line_r {text-align: center;}
+.down_line_l p, .down_line_r p{ font-size: 16px;}
 
 }
 
@@ -844,14 +1098,47 @@ h3.city-name {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
-
-
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+.advantages_items ul li {    width: 100%;}
+h2{font-size: 31px;}
+.order ul li {width: 100%;}
+.order ul {top: 0px;}
+.order {height: auto;}
+.main_text_box h1 {    font-size: 30px;}
+.offer_main {width: 100%;}
+.offer_main p {font-size: 21px;}
+.blur {width: 100%;    margin-top: 10px;}
+.main_text_box p {font-size: 21px;}
+div.tab button {font-size: 21px; width: auto;}
+h3.city-name {font-size: 21px;}
+.text-testimonial {font-size: 16px;}
+.block-one-example {top: 36px;margin: 30px 0px;}
+.photo{height: 450px;}
+.down_line_l, .down_line_r {text-align: center;}
+.down_line_l p, .down_line_r p{ font-size: 16px;}
+.advantages_items ul li img {width: 50%;}
+div.tab {border-bottom: 1px solid #b7b7b7;}
+.ipoteka_banks h3, .ipoteka h3 {font-size: 21px;}
+.ipoteka_txt p {font-size: 16px;}
+.ipoteka_txt span {font-size: 21px;}
+.ip_form_title p {font-size: 21px;}
+.ipoteka_form button {width: 80%;font-size: 21px;}
+.ipoteka_form {padding-bottom: 15px;}
+.bank_item img {width: 100%;}
+.plan_app .text-testimonial a {font-size: 16px;}
+.mfp-content form {width: 355px;padding: 10px 15px;}
+.main_text_box a {font-size: 25px;width: auto;}
+.nav_right i {top: 18px;}
+.plan_app .text-testimonial a {top:5px;}
+.ipoteka {background-image: none;}
 
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-   
+.mfp-content form{width: 310px;padding: 10px 15px;}
+.mfp-content form h2 {font-size: 22px;}
+.mfp-content h2 {margin-top: 0px;}
 }
 
