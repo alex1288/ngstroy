@@ -210,6 +210,8 @@ background-attachment: fixed;
  background-repeat: no-repeat;
  -ms-background-position-x: 74%;
  background-position-x: 74%;
+ -ms-background-position-y: 50%;
+ background-position-y: 50%;
  -webkit-background-size: auto;
  background-size: cover;
  position: relative;
