@@ -1113,6 +1113,7 @@ h3.city-name {
 h2{font-size: 31px;}
 .order ul li {width: 100%;}
 .order ul {top: 0px;}
+.main_text_box .small_p p {    font-size: 14px;}
 .order {height: auto;}
 .main_text_box h1 {    font-size: 30px;}
 .offer_main {width: 100%;}
