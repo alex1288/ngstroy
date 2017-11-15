@@ -136,6 +136,13 @@ width: 100%;
     background-position: bottom center;
         z-index: 1000;
 }
+.top_line a{
+      color: #535353;
+}
+.top_line a:hover{
+      color: rgba(83, 83, 83, 0.7);
+      text-decoration: none;
+}
 .float_l span{
       font-size: 50px;
     color: #535353;
@@ -160,9 +167,9 @@ width: 100%;
 }
 
 .nav_right i{
-      font-size: 50px;
+      font-size: 21px;
     color: #535353;
-    top: 25px;
+    top: 0;
     position: relative;
 }
 .nav_right ul{
@@ -1132,6 +1139,7 @@ div.tab {border-bottom: 1px solid #b7b7b7;}
 .nav_right i {top: 18px;}
 .plan_app .text-testimonial a {top:5px;}
 .ipoteka {background-image: none;}
+.nav_right i {font-size: 50px; top:25px;}
 
 }
 
