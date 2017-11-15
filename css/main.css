@@ -1051,10 +1051,10 @@ h3.city-name {
   position: relative;
   overflow: hidden;
      
-    background: rgba(0, 0, 0, 0.06);
+    //background: rgba(0, 0, 0, 0.06);
     box-shadow: none;
     font-size: 27px;
-    background: rgba(225, 181, 42, 0.74);
+    background:  rgba(255, 64, 64, 0.74);
 }
 .mfp-content button.but_order:active {
   top: 2px;
@@ -1062,7 +1062,7 @@ h3.city-name {
 }
 .mfp-content button.but_order:hover {
   background-position: -200% 0, 0 0;
-  background: rgba(225, 181, 42, 0.94);
+  background: #FF4040;
 }
 
 /*всплывающая форма обратной связи end*/
