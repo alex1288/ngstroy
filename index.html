@@ -119,8 +119,8 @@
 						</P>
 
 						<a href="#form" class="popap">Узнай как</a>
-						<div class="small_p"><P>*Предложение актуально до <script>
-						document.write(" "+Day+" "+fMonth+" "+Year+" года")</script>(включительно)</P></div>
+						<!-- <div class="small_p"><P>*Предложение актуально до <script>
+						document.write(" "+Day+" "+fMonth+" "+Year+" года")</script>(включительно)</P></div> -->
 					</div>
 
 				</div>
@@ -799,8 +799,14 @@ document.getElementById("defaultOpen").click();
 						<p>Расчитать ипотеку</p>		
 					</div>
 					<form >
+						<!-- <p>Первоначальный взнос</p>
+						<input max="1000000" min="45000" id="size" step="10000" onchange="$('#sizevalue').text($('#size').val());" type="range">
+<div id="sizevalue">45000</div> -->
 						<input type="text" placeholder="Первоначальный взнос">
 						<input type="text" placeholder="Стоимость квартиры">
+						<!-- <p>Стоимость квартиры</p>
+						<input max="3000000" min="900000" id="size" step="100000" onchange="$('#sizevalue2').text($('#size').val());" type="range">
+<div id="sizevalue2">1800000</div> -->
 						<input type="text" placeholder="Ваше имя">
 						<input type="text" placeholder="Ваш телефон">
 						<button>Расчитать</button>
@@ -924,7 +930,18 @@ function closeNav() {
     <script src="js/bootstrap-carousel.js"></script>
 
 
-
+<!-- Begin LeadBack code {literal} -->
+<script>
+    var _emv = _emv || [];
+    _emv['campaign'] = 'e66aed023cb30fe6782087ca';
+    
+    (function() {
+        var em = document.createElement('script'); em.type = 'text/javascript'; em.async = true;
+        em.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'leadback.ru/js/leadback.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(em, s);
+    })();
+</script>
+<!-- End LeadBack code {/literal} -->
 
 
 	<!-- Yandex.Metrika counter --> 

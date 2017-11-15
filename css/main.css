@@ -630,6 +630,11 @@ text-align: center;
     padding: 0;
     top: 25px;
     position: relative;
+    text-align: center;
+}
+
+.ipoteka_form p{
+font-size: 21px;
 }
 
 .ipoteka_form input{
@@ -695,6 +700,14 @@ background-color: rgba(255, 64, 64, 0.6);
 
   background-color: rgba(255, 64, 64, 0.8);
 
+}
+#sizevalue{
+    text-align: center;
+    border-bottom: 1px solid #cabdbd;
+    padding-bottom: 10px;
+    font-size: 21px;
+    width: 80%;
+    margin: auto;
 }
 
 .bank_item{
