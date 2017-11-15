@@ -1187,7 +1187,8 @@ div.tab {border-bottom: 1px solid #b7b7b7;}
 .plan_app .text-testimonial a {top:5px;}
 .ipoteka {background-image: none;}
 .nav_right i {font-size: 50px; top:25px;}
-
+.lb_widget {width: 100%;}
+.lb_footer {display: none;}
 }
 
 /* Custom, iPhone Retina */
