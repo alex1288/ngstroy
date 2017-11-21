@@ -182,7 +182,7 @@ $(document).ready(function() {
 	// }); 
 
 $(document).ready(function(){
-	$("#carousel-notification1").swipe( {
+	$(".bootstrap-carousel").swipe( {
 		swipeLeft: function() {
 			$(this).carousel("next");
 		},
