@@ -646,7 +646,7 @@ text-align: center;
   text-align: center;
   color: #fff;
 background-color: rgba(255, 64, 64, 0.6);
-    font-size: 36px;
+    font-size: 26px;
         line-height: 70px;
 }
 
@@ -672,13 +672,14 @@ background-color: rgba(255, 64, 64, 0.6);
 
 }
 
-.ipoteka_form input,.ipoteka_form button {
+.ipoteka_form input, .ipoteka_form button {
     display: block;
     width: 80%;
     margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
     height: 40px;
+    font-size: 20px;
 
 }
 .ipoteka_form button {
