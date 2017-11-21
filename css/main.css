@@ -1168,10 +1168,20 @@ div.tab button{width: auto;}
 .ipoteka_txt p {font-size: 18px;}
 .ipoteka_txt span {font-size: 23px;}
 .block-one-example {top: 120px;}
+.h700{height: 600px;}
+.photo {height: 600px;}
+.down_line p {font-size: 16px;}
+.nav_right .but_order_top {font-size: 16px;}
+.plan_app {min-height: 500px;}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+.main_text_box h1 {font-size: 60px;}
+.offer_main p{font-size: 30px;}
+
+
+
 
 .down_line_l p, .down_line_r p{ font-size: 16px;}
 }
