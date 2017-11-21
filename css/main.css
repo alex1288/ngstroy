@@ -361,11 +361,41 @@ text-transform: none;
 height: 100%;
     position: absolute;
     width: 69%;
-    z-index: 1000;
+  //  z-index: 1000;
     left: 0;
     right: 0;
     margin: auto;
 }
+.carousel-caption {
+    right: 20%;
+    left: 20%;
+    //padding-bottom: 30px;
+    top: 100;
+     background-color: gray;
+  }
+.carousel-inner .active:hover .carousel-caption, .carousel-inner .active:active .carousel-caption{
+      right: 20%;
+    left: 20%;
+    //padding-bottom: 30px;
+    top: 0;
+
+}
+
+.carousel-caption a{
+  height: 100%;
+    position: absolute;
+    width: 69%;
+  
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+  .carousel-caption h3{
+    display: none;
+  }
+
 
 
 .plan_app .text-testimonial a {
