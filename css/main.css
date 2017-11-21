@@ -180,8 +180,8 @@ width: 100%;
   display: inline-block;
 
   color: #585550;
-      padding: 20px 12px;
-  vertical-align: middle;
+      padding: 30px 7px;
+  vertical-align: top;
 
 }
 .nav_right .but_order_top {
@@ -189,12 +189,12 @@ position: relative;
     overflow: hidden;
     font-weight: bold;
     cursor: pointer;
-    /* height: 53px; */
+    border-radius: 5px;
     /* width: 70%; */
     /* max-width: 550px; */
     margin: auto;
-    font-size: 21px;
-    margin-top: 10px;
+    font-size: 17px;
+    //margin-top: 10px;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -227,9 +227,9 @@ position: relative;
 
 .nav_left ul li{
   display: inline-block;
-  padding: 20px 29px;
+  padding: 30px 29px;
   color: #585550;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 
@@ -615,10 +615,17 @@ font-weight: 900;
 font-size: 31px
 }
 
+.ipoteka  .ipoteka_banks h3 {
+   padding: 15px 0;
+}
+
+.ipoteka h3 {
+ padding: 0px 0;
+}
 
 .ipoteka_banks h3, .ipoteka h3{
 text-align: center;
-    padding: 0px 0;
+
     font-size: 31px;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
@@ -767,26 +774,32 @@ background-color: rgba(255,255,255,0.6);
 }
 
 
-
 .down_line {
   background-image: url(img/footer-bg.png);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: 50%;
   color: rgb(51, 51, 68);
+  padding: 25px 0px;
 }
 .down_line p{
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .down_line a{
    color: blue;
+  
+}
+.down_line_a{
+   font-size: 31px;
 }
 .small_p_f p {
+  padding-top: 15px;
     font-size: 16px;
     text-transform: none;
 }
 .footer_logo img{
+
   width: 100%;
   max-width: 170px;
 }
@@ -1113,14 +1126,48 @@ h3.city-name {
 /*всплывающая форма обратной связи end*/
 
 
+.mfp-content .poli{
+  width: 50%;
+  padding: 25px;
+  background-color: #f7f7f7;
+  width: 600px;
+  margin: auto;
+  position: relative;
+  color: #222222;
+  border-radius: 5px;
+  text-align: center;
+  height: 600px;
+  overflow: scroll;
+}
+
+.mfp-content .poli h2{
+font-size: 26px;
+}
+.mfp-content .poli p{
+  text-align: left;
+}
+.mfp-content .poli ul li{
+  text-align: left;
+}
                       /*Мобильная версия*/
 
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
-
+.nav_right ul li {padding: 30px 2px;font-size: 16px;}
+.nav_left ul li {font-size: 16px; padding: 30px 20px;}
+.offer_main p{font-size: 36px;}
+div.tab button{width: auto;}
+.offer_main {width: 80%;}
+.inner-testimonial {max-height: 189px;}
+.order ul li {width: 24%;}
+.ipoteka {background-size: 111%;background-position: 50% 50%;}
+.ip_form_title p {font-size: 23px;}
+.ipoteka_banks h3, .ipoteka h3 {font-size: 23px;}
+.ipoteka_txt p {font-size: 18px;}
+.ipoteka_txt span {font-size: 23px;}
+.block-one-example {top: 120px;}
 }
 
 /* Medium Devices, Desktops */
@@ -1172,7 +1219,7 @@ h3.city-name {font-size: 21px;}
 .photo{height: 450px;}
 .down_line_l, .down_line_r {text-align: center;}
 .down_line_l p, .down_line_r p{ font-size: 16px;}
-.advantages_items ul li img {width: 50%;}
+.advantages_items ul li img {width: 88px;display: block;margin: auto;}
 div.tab {border-bottom: 1px solid #b7b7b7;}
 .ipoteka_banks h3, .ipoteka h3 {font-size: 21px;}
 .ipoteka_txt p {font-size: 16px;}
