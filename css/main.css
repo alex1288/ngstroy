@@ -146,10 +146,16 @@ width: 100%;
 .float_l span{
       font-size: 50px;
     color: #535353;
-    top: 25px;
+    top: 19px;
     position: relative;
 }
 
+.top_line a i{
+      font-size: 50px;
+    color: rgb(83, 83, 83);
+    top: 0px;
+    position: relative;
+}
 
 .main_logo{
     background-image: url(img/logo.png);
@@ -1179,11 +1185,19 @@ div.tab button{width: auto;}
 @media only screen and (max-width : 992px) {
 .main_text_box h1 {font-size: 60px;}
 .offer_main p{font-size: 30px;}
-
-
-
-
+div.tab button{font-size: 23px;}
+h2{font-size: 30px;}
+.h723 {height: 723px;}
+.order ul li {width: 49%;}
+.order ul {top: 70px;}
+.block-one-example {top: 65px;}
+.h700{height: 500px;}
+.photo {height: 500px;}
+.inner-testimonial {max-height: 179px;overflow: hidden;}
+.ip_form_title p{font-size: 21px;line-height: 47px;}
+.ipoteka {    background-size: 131%;}
 .down_line_l p, .down_line_r p{ font-size: 16px;}
+.down_line_a {font-size: 29px;}
 }
 
 
@@ -1195,14 +1209,16 @@ div.tab button{width: auto;}
 .order ul li {width: 100%;}
 .order ul {top: 0px;}
 .order {height: auto;}
-.main_text_box h1 {font-size: 30px;}
+.main_text_box h1 {font-size: 46px;}
 .offer_main {width: 100%;}
 .offer_main p {font-size: 25px;}
 .blur {width: 100%;    margin-top: 10px;}
 .main_text_box p {font-size: 25px;}
 .down_line_l, .down_line_r {text-align: center;}
 .down_line_l p, .down_line_r p{ font-size: 16px;}
-
+.inner-testimonial {max-height: 260px;}
+.ipoteka {background-position: 0% 0%;}
+.bank_item img {width: 50%;}
 }
 
 
@@ -1237,7 +1253,7 @@ div.tab {border-bottom: 1px solid #b7b7b7;}
 .ip_form_title p {font-size: 21px;}
 .ipoteka_form button {width: 80%;font-size: 21px;}
 .ipoteka_form {padding-bottom: 15px;}
-.bank_item img {width: 100%;}
+.bank_item img {width: 70%;}
 .plan_app .text-testimonial a {font-size: 16px;}
 .mfp-content form {width: 355px;padding: 10px 15px;}
 .main_text_box a {font-size: 25px;width: auto;}
@@ -1247,6 +1263,9 @@ div.tab {border-bottom: 1px solid #b7b7b7;}
 .nav_right i {font-size: 50px; top:25px;}
 
 .lb_footer {display: none;}
+.h723 {height: 573px;}
+.photo{background-size: 300%;}
+.float_l span {position: fixed;}
 }
 
 /* Custom, iPhone Retina */
