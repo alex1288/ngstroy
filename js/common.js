@@ -181,7 +181,17 @@ $(document).ready(function() {
 	// 	return false;
 	// }); 
 
-
+$(document).ready(function(){
+	$("#carousel-notification1").swipe( {
+		swipeLeft: function() {
+			$(this).carousel("next");
+		},
+		swipeRight: function() {
+			$(this).carousel("prev");
+		},
+		allowPageScroll: "vertical"
+	});
+});
 
 	$(".owl-carousel").owlCarousel({
 		loop:true,
