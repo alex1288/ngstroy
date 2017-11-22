@@ -241,6 +241,41 @@ position: relative;
 
 
 
+/*меню при скроле*/
+#navbar {
+   background-image: url(img/top_f.png);
+  color: #585550;
+  vertical-align: top;
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  margin: auto;
+  display:block;
+  transition: top 0.3s;
+}
+#navbar ul{
+  text-align: center;
+}
+#navbar ul li{
+  display: inline-block;
+}
+#navbar ul li a {
+    float: left;
+    display: block;
+    color: rgba(83, 83, 83, 1);
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 5px 0px 12px 0px;
+}
+
+#navbar ul li  a:hover {
+
+      color: rgba(83, 83, 83, 0.6);
+      text-decoration: none;}
+
+/*меню при скроле*/
 .main_box{
 background-attachment: fixed;
  background-image: url(img/mbg.jpg);
@@ -483,7 +518,7 @@ div.tab button.active {
 /* Style the tab content */
 .tabcontent {
     display: none;
-    min-height: 750px;
+    min-height: 516px;
     border-top: none;
 }
 

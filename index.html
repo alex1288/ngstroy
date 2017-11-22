@@ -31,7 +31,7 @@
 
 	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.8" />
+	<link rel="stylesheet" href="css/main.css?ver=1.9" />
 	<link rel="stylesheet" href="css/media.css" />
 	<link rel="stylesheet" href="css/fm.revealator.jquery.min.css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" />
@@ -47,8 +47,37 @@
 	
 	<header class="header_box" >
 		<div class="top_line">
+
+<div id="navbar" class="hidden-xs hidden-sm" >
+	<div class="container">
+				<nav id="menu4">
+						<ul class="">
+							<li><a href="#apartment">Цены и планировки</a></li>
+							<li><a href="#place">Расположение</a></li>
+							<li><a href="#photo">Фото</a></li>
+							<li><a href="#order">Оформление квартиры</a></li>
+								<li><a href="#ipoteka">Расчитать ипотеку</a></li>
+						</ul>
+						</nav>
+						<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 200) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-100px";
+    }
+}
+</script>
+</div>
+</div>
+
 			<div class="container">
+
 				<div class="row">
+					
 					<div class="float_l hidden-lg hidden-md col-sm-2 col-xs-3"> 
 
 						
@@ -72,6 +101,7 @@
 						
 
 					</div>
+					
 					<div class="nav_left col-md-5 hidden-xs hidden-sm">
 						<ul>
 							<nav id="menu">
@@ -965,7 +995,7 @@ function closeNav() {
 	<script src="libs/countdown/jquery.countdown.min.js"></script>
 	<script src="libs/countdown/jquery.countdown-ru.js"></script>
 	<script src="libs/landing-nav/navigation.js"></script>
-	<script src="js/common.js?ver=1.54"></script>
+	<script src="js/common.js?ver=1.55"></script>
 	<script src="js/parallax.min.js"></script>
 	<script src="js/fm.revealator.jquery.min.js"></script> <!-- http://wordsmall.ru/jquery-javascript/animaciya-poyavleniya-blokov-dlya-landing-page.html -->
 	<!-- <script src="js/jquery.smoothscroll.js"></script> -->
