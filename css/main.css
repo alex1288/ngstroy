@@ -410,9 +410,8 @@ text-transform: none;
     left: 0;
     right: 0;
     margin: auto;
-}
-.carousel-caption a{
-  text-decoration: none;
+        top: 5px;
+          text-decoration: none;
 }
 
   .carousel-caption h3{
@@ -1323,12 +1322,6 @@ div.tab {border-bottom: 1px solid #b7b7b7;}
 .float_l span {position: fixed;}
 
 
-.carousel-caption {
-            -webkit-transition:   0.5s ease-out 0.5s;
-     -moz-transition:  0.5s ease-out 0.5s;
-     -o-transition:   0.5s ease-out 0.5s;
-     transition:  0.5s ease-out 0.5s;
-     top: 100%; }
 }
 
 /* Custom, iPhone Retina */
