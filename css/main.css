@@ -391,7 +391,7 @@ text-transform: none;
      cursor: pointer;
 
   }
-.carousel-inner .active:hover .carousel-caption, .carousel-inner .active:active .carousel-caption{
+/*.carousel-inner .active:hover .carousel-caption,*/ .carousel-inner .active:active .carousel-caption{
       right: 00%;
     left: 00%;
    // padding-bottom: 130px;
