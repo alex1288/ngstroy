@@ -391,7 +391,7 @@ text-transform: none;
      cursor: pointer;
 
   }
-/*.carousel-inner .active:hover .carousel-caption,*/ .carousel-inner .active:active .carousel-caption{
+/*.carousel-inner .active:active .carousel-caption,*/ .carousel-inner .active:hover .carousel-caption{
       right: 00%;
     left: 00%;
    // padding-bottom: 130px;
@@ -1322,6 +1322,9 @@ div.tab {border-bottom: 1px solid #b7b7b7;}
      -moz-transition:  0.5s ease-out 0.5s;
      -o-transition:   0.5s ease-out 0.5s;
      transition:  0.5s ease-out 0.5s;
+     touch-action: manipulation;
+   }
+
 
 
 
