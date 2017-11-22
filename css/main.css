@@ -186,7 +186,7 @@ width: 100%;
   display: inline-block;
 
   color: #585550;
-      padding: 30px 7px;
+      padding: 30px 12px;
   vertical-align: top;
 
 }
@@ -233,9 +233,10 @@ position: relative;
 
 .nav_left ul li{
   display: inline-block;
-  padding: 30px 29px;
+ // padding: 30px 29px;
   color: #585550;
   vertical-align: top;
+      padding: 30px 19px 30px 33px;
 }
 
 
@@ -482,7 +483,7 @@ div.tab button.active {
 /* Style the tab content */
 .tabcontent {
     display: none;
-
+    min-height: 750px;
     border-top: none;
 }
 
@@ -1326,6 +1327,7 @@ div.tab {border-bottom: 1px solid #b7b7b7;}
      transition:  0.5s ease-out 0.5s;
      touch-action: manipulation;
    }
+   .tabcontent {min-height: 750px;}
 
 
 
@@ -1338,5 +1340,6 @@ div.tab {border-bottom: 1px solid #b7b7b7;}
 .mfp-content form h2 {font-size: 22px;}
 .mfp-content h2 {margin-top: 0px;}
 .ipoteka_form input{line-height: 26px;}
+.tabcontent {min-height: 500px;}
 }
 
