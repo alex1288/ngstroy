@@ -1,17 +1,17 @@
 *::-webkit-input-placeholder {
-	color: #666;
+	color: #66666673;
 	opacity: 1;
 }
 *:-moz-placeholder {
-	color: #666;
+	color: #66666673;
 	opacity: 1;
 }
 *::-moz-placeholder {
-	color: #666;
+	color: #66666673;
 	opacity: 1;
 }
 *:-ms-input-placeholder {
-	color: #666;
+	color: #66666673;
 	opacity: 1;
 }
 
@@ -704,6 +704,8 @@ font-size: 21px;
 
 .ipoteka_form input{
 text-align: center;
+border: 1px solid #666;
+border-radius: 5px;
 }
 
 .ip_form_title p{
@@ -1335,5 +1337,6 @@ div.tab {border-bottom: 1px solid #b7b7b7;}
 .mfp-content form{width: 310px;padding: 10px 15px;}
 .mfp-content form h2 {font-size: 22px;}
 .mfp-content h2 {margin-top: 0px;}
+.ipoteka_form input{line-height: 26px;}
 }
 
