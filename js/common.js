@@ -231,11 +231,6 @@ $(document).ready(function(){
 	       dots: true,
         nav: false,
 	    },
-	    // breakpoint from 480 up
-    480 : {
-        items: 1,
-         nav: false,
-    },
 	    // > 768
 	    768 : {
 	    	items: 3,
