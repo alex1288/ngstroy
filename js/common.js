@@ -233,7 +233,7 @@ $(document).ready(function(){
 	    },
 	    // > 768
 	    768 : {
-	    	items: 3,
+	    	items: 1,
 	    	margin:5,
 	    	stagePadding: 5,
         dots: true,
