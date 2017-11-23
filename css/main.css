@@ -548,7 +548,28 @@ background-image:none;
 
 }
 
+.carousel-indicators {
+    bottom: -35px;
+  }
 
+  .carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    background-color: #cc0000ad;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px 5px;
+    text-indent: -999px;
+    cursor: pointer;
+   
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #cc0000ad;
+    border-radius: 10px;
+}
 
 .advantages {
 background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 14%, rgba(0,0,0,0) 27%, rgba(0,0,0,0.20) 99%, rgba(0,0,0,0.20) 100%); /* FF3.6-15 */
