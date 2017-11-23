@@ -1383,7 +1383,7 @@ div.tab {border-bottom: 1px solid #b7b7b7;}
      transition:  0.5s ease-out 0.5s;
      touch-action: manipulation;
    }
-   .tabcontent {min-height: 750px;}
+   .tabcontent {min-height: 520px;}
 
 
 
