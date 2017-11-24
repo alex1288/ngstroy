@@ -206,7 +206,17 @@ $(document).ready(function(){
 	});
 });
 
-
+$(document).ready(function(){
+	$(".bootstrap-carousel").swipe( {
+		swipeLeft: function() {
+			$(this).carousel("fancybox-next");
+		},
+		swipeRight: function() {
+			$(this).carousel("fancybox-prev");
+		},
+		allowPageScroll: "vertical"
+	});
+});
 
 
 	$(".owl-carousel").owlCarousel({
