@@ -207,12 +207,12 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-	$(".bootstrap-carousel").swipe( {
+	$(".fancybox-desktop").swipe( {
 		swipeLeft: function() {
-			$(this).carousel("fancybox-next");
+			$(this).carousel(".fancybox-next");
 		},
 		swipeRight: function() {
-			$(this).carousel("fancybox-prev");
+			$(this).carousel(".fancybox-prev");
 		},
 		allowPageScroll: "vertical"
 	});
