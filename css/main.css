@@ -1351,7 +1351,7 @@ h2{font-size: 31px;}
 .offer_main {width: 100%;}
 .offer_main p {font-size: 21px;}
 .blur {width: 100%;    margin-top: 10px;}
-.main_text_box p {font-size: 21px;}
+.main_text_box p {font-size: 18px;}
 div.tab button {font-size: 21px; width: auto;}
 h3.city-name {font-size: 21px;}
 .text-testimonial {font-size: 16px;}
@@ -1387,7 +1387,7 @@ div.tab {border-bottom: 1px solid #b7b7b7;}
 .top_line a i {font-size: 40px;top: -22px;}
 .main_logo{background-size: 140px;    height: 112px}
 .main_text_box {top: 130px;}
-
+.main_text_box {padding: 7px;}
 }
 
 /* Custom, iPhone Retina */
@@ -1397,7 +1397,7 @@ div.tab {border-bottom: 1px solid #b7b7b7;}
 .mfp-content h2 {margin-top: 0px;}
 .ipoteka_form input{line-height: 26px;}
 .tabcontent {min-height: 500px;}
-.main_text_box {padding: 7px;}
+
 .main_text_box a{font-size: 19px;}
 .h723 {height: 470px;}
 .main_text_box h1{line-height: 31px; }
