@@ -1284,6 +1284,7 @@ div.tab button{width: auto;}
 .ipoteka {background-size: 111%;background-position: 50% 50%;}
 .ip_form_title p {font-size: 23px;}
 .ipoteka_banks h3, .ipoteka h3 {font-size: 23px;}
+.ipoteka h3 {text-align: left;}
 .ipoteka_txt p {font-size: 18px;}
 .ipoteka_txt span {font-size: 23px;}
 .block-one-example {top: 120px;}
