@@ -209,10 +209,10 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$(".fancybox-desktop").swipe( {
 		swipeLeft: function() {
-			$(this).carousel(".fancybox-next");
+			$(this).fancybox-wrap(".fancybox-next");
 		},
 		swipeRight: function() {
-			$(this).carousel(".fancybox-prev");
+			$(this).fancybox-wrap(".fancybox-prev");
 		},
 		allowPageScroll: "vertical"
 	});
