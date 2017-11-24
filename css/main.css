@@ -1346,7 +1346,7 @@ h2{font-size: 31px;}
 .order ul {top: 0px;}
 .main_text_box .small_p p {    font-size: 14px;}
 .order {height: auto;}
-.main_text_box h1 {    font-size: 30px;}
+.main_text_box h1 {    font-size: 30px;line-height: 31px;}
 .offer_main {width: 100%;}
 .offer_main p {font-size: 21px;}
 .blur {width: 100%;    margin-top: 10px;}
@@ -1376,7 +1376,7 @@ div.tab {border-bottom: 1px solid #b7b7b7;}
 .nav_right i {font-size: 50px; top:25px;}
 
 .lb_footer {display: none;}
-.h723 {height: 440px;}
+.h723 {height: 500px;}
 .photo{background-size: 300%;}
 .float_l span {position: fixed;}
 .carousel-caption {-webkit-transition:   0.5s ease-out 0.5s;-moz-transition:  0.5s ease-out 0.5s;-o-transition:   0.5s ease-out 0.5s;transition:  0.5s ease-out 0.5s;touch-action: manipulation;}
@@ -1399,7 +1399,7 @@ div.tab {border-bottom: 1px solid #b7b7b7;}
 .main_text_box {padding: 7px;}
 .main_text_box a{font-size: 19px;}
 .h723 {height: 470px;}
-.main_text_box h1{line-height: 31px;}
+.main_text_box h1{line-height: 31px; }
 .main_text_box p {font-size: 17px;}
 
 }
