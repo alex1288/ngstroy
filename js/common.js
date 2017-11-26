@@ -245,10 +245,10 @@ $(document).ready(function(){
         nav: false,
 	    },
 	    // breakpoint from 480 up
-    480 : {
-        items: 1,
-         nav: false,
-    },
+    // 480 : {
+    //     items: 1,
+    //      nav: false,
+    // },
 	    // > 768
 	    768 : {
 	    	items: 1,
@@ -256,15 +256,7 @@ $(document).ready(function(){
 	    	stagePadding: 5,
         dots: true,
         nav: false,
-	    },
-	    991:{
-                items: 3
-                margin:5,
-	    	stagePadding: 5,
-        dots: true,
-        nav: false,
-
-            }
+	    }
 		}
 	});
 
