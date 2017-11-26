@@ -206,17 +206,20 @@ $(document).ready(function(){
 	});
 });
 
+
+
 $(document).ready(function(){
-	$(".fancybox-desktop").swipe( {
+	$(".fancybox-wrap").swipe( {
 		swipeLeft: function() {
-			$(this).fancybox-wrap(".fancybox-next");
+			$(this).carousel("next");
 		},
 		swipeRight: function() {
-			$(this).fancybox-wrap(".fancybox-prev");
+			$(this).carousel("prev");
 		},
 		allowPageScroll: "vertical"
 	});
 });
+
 
 
 	$(".owl-carousel").owlCarousel({
@@ -248,12 +251,20 @@ $(document).ready(function(){
     },
 	    // > 768
 	    768 : {
-	    	items: 3,
+	    	items: 1,
 	    	margin:5,
 	    	stagePadding: 5,
         dots: true,
         nav: false,
-	    }
+	    },
+	    991:{
+                items: 3
+                margin:5,
+	    	stagePadding: 5,
+        dots: true,
+        nav: false,
+
+            }
 		}
 	});
 
@@ -309,6 +320,13 @@ $(function() {
     $("#image-modal").modal('hide')
   });
 });
+
+
+
+
+
+
+
 
 
 }); 
