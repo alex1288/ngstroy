@@ -166,7 +166,7 @@ width: 100%;
     background-repeat: no-repeat;
     background-size: 190px;
 }
-}
+
 
 .nav_right {
 
@@ -429,7 +429,7 @@ text-transform: none;
      cursor: pointer;
 
   }
-/*.carousel-inner .active:active .carousel-caption,*/ .carousel-inner .active:hover .carousel-caption{
+ .carousel-inner .active:hover .carousel-caption{
       right: 00%;
     left: 00%;
    // padding-bottom: 130px;
@@ -851,12 +851,7 @@ background-color: rgba(255, 64, 64, 0.6);
 
 }
 
-/*.bank_item:hover{
--webkit-box-shadow: 0px 25px 47px -12px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 25px 47px -12px rgba(0,0,0,0.75);
-box-shadow: 0px 25px 47px -12px rgba(0,0,0,0.75);
-background-color: #fff;
-}*/
+
 
 .bank_item img{
     width: 80%;
@@ -983,15 +978,7 @@ h3.city-name {
   text-align: left;
 }
 
-/*p*/
-/*.text-testimonial {
-  padding: 0px 0;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  line-height: 25px;
-  text-align: left;
-}*/
+
 
 /*p*/
 .text-testimonial {
@@ -1220,8 +1207,6 @@ h3.city-name {
   color: #371400;
   font-weight: 300;
   border: none;
-/*  border-bottom: 3px solid #D0730C;*/
-/*  border-radius: 10px;*/
   outline: none;
   box-sizing: border-box;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8c335', endColorstr='#fdaa38',GradientType=0 );

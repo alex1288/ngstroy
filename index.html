@@ -8,28 +8,27 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Новый город</title>
-	<meta name="description" content="" />
-	<meta name="yandex-verification" content="5fb184e56a792d53" />
+	<meta name="description" content="Квартиры от застройщика ЖК Новый город. Цена от 900 тр." />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta property="og:type"  content="business.business" /> 
 	<meta property="og:title" content="Новый город" />
-	<meta property="og:description" content="Заказать разработку Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod " />
-	<meta property="og:url" content="http:/" />
-	<meta property="og:image" content="http://" />
+	<meta property="og:description" content="Квартиры от застройщика ЖК Новый город. Цена от 900 тр." />
+	<meta property="og:url" content="http://ngstroy69.ru/" />
+	<meta property="og:image" content="http://ngstroy69.ru/images/2.jpg" />
 	<link rel="shortcut icon" href="favicon.ico" />
 
+
+
+
 <link rel="stylesheet" href="css/bootstrap.min.css">
-
-
-
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
 	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css" />
 	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css">
 
-	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
+<!-- 	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" /> -->
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css?ver=2.16" />
 	<link rel="stylesheet" href="css/media.css" />
@@ -172,8 +171,6 @@ function scrollFunction() {
 						</P>
 
 						<a href="#form" class="popap">Узнай как</a>
-						<!-- <div class="small_p"><P>*Предложение актуально до <script>
-						document.write(" "+Day+" "+fMonth+" "+Year+" года")</script>(включительно)</P></div> -->
 					</div>
 
 				</div>
@@ -541,7 +538,6 @@ document.getElementById("defaultOpen").click();
 
 
 <section class="place " id="place" >
-<!-- 	<div class="white_gr_style" style="height: 502px;"></div> -->
 <h2>Расположение</h2>
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac6d010370c68fb75b5667e0402cb52cda002632d2d5c647c8512f4e3adc4faac&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
 </section>
@@ -800,9 +796,7 @@ document.getElementById("defaultOpen").click();
 
 
 	</div>
-		<!-- 	<p>
-				<a href="#" >Заказать звонок консультанта</a>
-			</p> -->
+
 </div>
 
 			</div>
@@ -841,18 +835,11 @@ document.getElementById("defaultOpen").click();
 					<div class="ip_form_title">
 						<p>Оставить онлайн заявку на ипотеку</p>		
 					</div>
-					<form >
-						<!-- <p>Первоначальный взнос</p>
-						<input max="1000000" min="45000" id="size" step="10000" onchange="$('#sizevalue').text($('#size').val());" type="range">
-<div id="sizevalue">45000</div> -->
-						<input type="text" placeholder="Первоначальный взнос">
-						<input type="text" placeholder="Стоимость квартиры">
-						
-						<!-- <p>Стоимость квартиры</p>
-						<input max="3000000" min="900000" id="size" step="100000" onchange="$('#sizevalue2').text($('#size').val());" type="range">
-<div id="sizevalue2">1800000</div> -->
-						<input type="text" placeholder="Ваше имя" required>
-						<input type="text" id="phone2" placeholder="Ваш телефон" required>
+					<form id="form2">
+						<input type="text" name="fee" placeholder="Первоначальный взнос">
+						<input type="text" name="cost" placeholder="Стоимость квартиры">
+						<input type="text" name="name"  placeholder="Ваше имя" required>
+						<input type="text" name="phone" id="phone2" placeholder="Ваш телефон" required>
 						<button>Отправить заявку</button>
 					</form>
 
@@ -927,7 +914,7 @@ document.getElementById("defaultOpen").click();
 		<p>Вы можете позвонить по телефону<br> <b>+7&nbsp;(4822)&nbsp;64&nbsp;10&nbsp;11</b></p>
 		<p>или заказать обратный звонок: <br>	
 			<input style="margin-top: 20px; " type="text" name="name" placeholder="Иванов Иван" required>
-			<input type="text" id="phone4" name="phone" placeholder="+7 (___) ___-__-__" required>
+			<input type="text" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
 			<button class="but_order" style="height: 53px;">Отправить</button>
 		</form>
 	</div>
@@ -991,18 +978,39 @@ function closeNav() {
 }
 
 </script>
+
+<script>	$("form").submit(function() {
+		$.ajax({
+			type: "GET",
+			url: "mail.php",
+			data: $("#form").serialize()
+		}).done(function() {
+			alert("Спасибо за заявку!");
+			setTimeout(function() {
+				$.fancybox.close();
+			}, 1000);
+		});
+		return false;
+	});
+
+	$("#form2").submit(function() {
+		$.ajax({
+			type: "GET",
+			url: "mail.php",
+			data: $("#form2").serialize()
+		}).done(function() {
+			alert("Спасибо за заявку!");
+			setTimeout(function() {
+				$.fancybox.close();
+			}, 1000);
+		});
+		return false;
+	});</script>
 	</footer>
 
 
 
-	<!--[if lt IE 9]>
-	<script src="libs/html5shiv/es5-shim.min.js"></script>
-	<script src="libs/html5shiv/html5shiv.min.js"></script>
-	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-	<script src="libs/respond/respond.min.js"></script>
-	<![endif]-->
-	
-	<!-- <script src="libs/jquery/jquery-3.2.1.min.js"></script>	 -->
+
 	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
 	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
@@ -1015,31 +1023,45 @@ function closeNav() {
 	<script src="libs/landing-nav/navigation.js"></script>
 	<script src="js/common.js?ver=1.64"></script>
 	<script src="js/parallax.min.js"></script>
-	<script src="js/fm.revealator.jquery.min.js"></script> <!-- http://wordsmall.ru/jquery-javascript/animaciya-poyavleniya-blokov-dlya-landing-page.html -->
-	<!-- <script src="js/jquery.smoothscroll.js"></script> -->
+	<script src="js/fm.revealator.jquery.min.js"></script> 
 	<script src="js/maskedinput.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
-
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-
-<script src="js/jquery.touchSwipe.min.js"></script>
-
-<!-- Begin LeadBack code {literal} -->
-<!-- <script>
-    var _emv = _emv || [];
-    _emv['campaign'] = 'e66aed023cb30fe6782087ca';
-    
-    (function() {
-        var em = document.createElement('script'); em.type = 'text/javascript'; em.async = true;
-        em.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'leadback.ru/js/leadback.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(em, s);
-    })();
-</script> -->
-<!-- End LeadBack code {/literal} -->
+	<script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-carousel.js"></script>
+	<script src="js/jquery.touchSwipe.min.js"></script>
 
 
-	<!-- Yandex.Metrika counter --> 
+
+
+  <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter46075659 = new Ya.Metrika({
+                        id:46075659,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/46075659" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
 </html>
