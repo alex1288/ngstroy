@@ -252,6 +252,14 @@ $(document).ready(function(){
 	       dots: true,
         nav: false,
 	    },
+	    600 : {
+	    	items: 1,
+	      
+	      margin:5,
+	      stagePadding: 5,
+	       dots: true,
+        nav: false,
+	    },
 
 	    // > 768
 	    768 : {
