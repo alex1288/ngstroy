@@ -208,17 +208,6 @@ $(document).ready(function(){
 
 
 
-$(document).ready(function(){
-	$(".fancybox-wrap").swipe( {
-		swipeLeft: function() {
-			$(this).carousel("next");
-		},
-		swipeRight: function() {
-			$(this).carousel("prev");
-		},
-		allowPageScroll: "vertical"
-	});
-});
 
 
 
@@ -263,6 +252,13 @@ $(document).ready(function(){
 
 	    // > 768
 	    768 : {
+	    	items: 1,
+	    	margin:5,
+	    	stagePadding: 5,
+        dots: true,
+        nav: false,
+	    },
+	    	    920 : {
 	    	items: 3,
 	    	margin:5,
 	    	stagePadding: 5,
