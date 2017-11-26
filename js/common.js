@@ -241,7 +241,7 @@ $(document).ready(function(){
         dots: true,
         nav: false,
 	    },
-	    	    920 : {
+	    	    769 : {
 	    	items: 3,
 	    	margin:5,
 	    	stagePadding: 5,
