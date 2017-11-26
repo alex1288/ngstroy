@@ -1,10 +1,42 @@
 $(document).ready(function() {
 
+
+
+	//Аякс отправка форм
+	//Документация: http://api.jquery.com/jquery.ajax/
+	$("form").submit(function() {
+		$.ajax({
+			type: "GET",
+			url: "mail.php",
+			data: $("#form").serialize()
+		}).done(function() {
+			alert("Спасибо за заявку!");
+			setTimeout(function() {
+				$.fancybox.close();
+			}, 1000);
+		});
+		return false;
+	});
+
+	$("#form2").submit(function() {
+		$.ajax({
+			type: "GET",
+			url: "mail.php",
+			data: $("#form2").serialize()
+		}).done(function() {
+			alert("Спасибо за заявку!");
+			setTimeout(function() {
+				$.fancybox.close();
+			}, 1000);
+		});
+		return false;
+	});
+
 	//Таймер обратного отсчета
 	//Документация: http://keith-wood.name/countdown.html
 	//<div class="countdown" date-time="2015-01-07"></div>
-	var austDay = new Date($(".countdown").attr("date-time"));
-	$(".countdown").countdown({until: austDay, format: 'yowdHMS'});
+/*	var austDay = new Date($(".countdown").attr("date-time"));
+	$(".countdown").countdown({until: austDay, format: 'yowdHMS'});*/
 
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto
@@ -149,35 +181,7 @@ $("#menu4").on("click","a", function (event) {
 		return false;
 	});
 	
-	//Аякс отправка форм
-	//Документация: http://api.jquery.com/jquery.ajax/
-	$("form").submit(function() {
-		$.ajax({
-			type: "GET",
-			url: "mail.php",
-			data: $("#form").serialize()
-		}).done(function() {
-			alert("Спасибо за заявку!");
-			setTimeout(function() {
-				$.fancybox.close();
-			}, 1000);
-		});
-		return false;
-	});
 
-	$("#form2").submit(function() {
-		$.ajax({
-			type: "GET",
-			url: "mail.php",
-			data: $("#form2").serialize()
-		}).done(function() {
-			alert("Спасибо за заявку!");
-			setTimeout(function() {
-				$.fancybox.close();
-			}, 1000);
-		});
-		return false;
-	});
 
 // форма обратной связи всплывающая 
 	// $("#form").submit(function() {
@@ -192,7 +196,7 @@ $("#menu4").on("click","a", function (event) {
 	// 		}, 1000);
 	// 	});
 	// 	return false;
-	// }); 
+ // }); 
 
 $(document).ready(function(){
 	$(".bootstrap-carousel").swipe( {
@@ -312,7 +316,6 @@ $(function() {
     $("#image-modal").modal('hide')
   });
 });
-
 
 
 

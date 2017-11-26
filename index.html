@@ -978,36 +978,7 @@ function closeNav() {
 }
 
 </script>
-
-<script>	$("form").submit(function() {
-		$.ajax({
-			type: "GET",
-			url: "mail.php",
-			data: $("#form").serialize()
-		}).done(function() {
-			alert("Спасибо за заявку!");
-			setTimeout(function() {
-				$.fancybox.close();
-			}, 1000);
-		});
-		return false;
-	});
-
-	$("#form2").submit(function() {
-		$.ajax({
-			type: "GET",
-			url: "mail.php",
-			data: $("#form2").serialize()
-		}).done(function() {
-			alert("Спасибо за заявку!");
-			setTimeout(function() {
-				$.fancybox.close();
-			}, 1000);
-		});
-		return false;
-	});</script>
 	</footer>
-
 
 
 
