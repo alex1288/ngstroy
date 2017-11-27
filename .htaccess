@@ -7,8 +7,8 @@ RewriteRule . /index.php [L]
 
 
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.best-one.ru$ [NC]
-RewriteRule ^(.*)$ http://best-one.ru/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.ngstroy69.ru$ [NC]
+RewriteRule ^(.*)$ http://ngstroy69.ru/$1 [R=301,L]
 
 <ifModule mod_expires.c>
 

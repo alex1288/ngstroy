@@ -3,5 +3,5 @@ Disallow:
 
 User-agent: Yandex
 Disallow:
-Host: best-one.ru/
-Sitemap:  best-one.ru/sitemap.xml
+Host: ngstroy69.ru/
+Sitemap:  ngstroy69.ru/sitemap.xml
